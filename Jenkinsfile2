@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo 'build'
+            // One or more steps need to be included within the steps block.
+            }
+        }
+
+        stage('test') {
+            steps {
+                 echo 'test'
+            // One or more steps need to be included within the steps block.
+            }
+        }
+
+        stage('deploy') {
+            steps {
+                 echo 'deploy'
+                 echo 'done'
+            // One or more steps need to be included within the steps block.
+            }
+        }
+
+    }
+}
